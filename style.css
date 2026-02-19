@@ -1,7 +1,8 @@
 body {
-    /* Changed from #1a1a1a to a lighter slate grey */
-    background-color: #2e2e2e; 
-    color: #f4f4f4;
+    /* Changing to a much lighter, neutral grey */
+    background-color: #e0e0e0; 
+    /* Changing text to dark so it's readable on the light background */
+    color: #222; 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -33,7 +34,7 @@ h1 {
 
 .tagline {
     font-style: italic;
-    color: #bbb; /* Lightened from #888 for better contrast */
+    color: #555; /* Darker grey for the tagline */
     margin-bottom: 40px;
     font-weight: 300;
 }
@@ -46,8 +47,9 @@ h1 {
 
 .btn {
     text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
+    /* Changing button text and border to dark to match the new theme */
+    color: #222;
+    border: 2px solid #222;
     padding: 15px 25px;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -55,11 +57,10 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* Hover effect sampled from the reddish-brown in your new logo */
 .btn:hover {
     background-color: #8b3a2b; 
     border-color: #8b3a2b;
-    color: #fff;
+    color: #fff; /* White text on hover for contrast */
     transform: translateY(-2px);
 }
 
