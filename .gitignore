@@ -1,0 +1,27 @@
+# Mac System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Video Editing Temp Files (FCPX, Premiere, Resolve)
+*.prproj.backup
+*.fcpbundle/
+*.fcpbundle/Shared\ Items/
+*.fcpbundle/Render\ Files/
+/Capture\ Scratch/
+/Audio\ Video\ Previews/
+/Adobe\ Premiere\ Pro\ Auto-Save/
+*.otio
+
+# Large Media Files (Don't track raw 4K on GitHub)
+*.mp4
+*.mov
+*.m4v
+*.mkv
+*.avi
+*.wav
+*.mp3
+
+# Thumbnail and Cache
+.cache/
+Thumbs.db
