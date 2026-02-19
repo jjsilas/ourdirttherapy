@@ -54,13 +54,20 @@ h1 {
     text-transform: uppercase;
     font-weight: 700; /* Bold makes the dark text pop */
     letter-spacing: 1px;
+
+    /* Glass-morphism effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* This creates the "frosted" look */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari on Mac/iOS */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .btn:hover {
-    background-color: #8b3a2b; 
+    background-color: rgba(139, 58, 43, 0.8); /* Reddish-brown, slightly transparent */
     border-color: #8b3a2b;
-    color: #fff; /* White text on hover for contrast */
+    color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 footer {
