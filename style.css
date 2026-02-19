@@ -46,14 +46,13 @@ h1 {
 }
 
 .btn {
-    text-decoration: none;
-    /* Changing button text and border to dark to match the new theme */
-    color: #222;
+   text-decoration: none;
+    color: #222; /* Matches the border */
     border: 2px solid #222;
     padding: 15px 25px;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700; /* Bold makes the dark text pop */
     letter-spacing: 1px;
 }
 
