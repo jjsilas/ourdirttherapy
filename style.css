@@ -1,3 +1,25 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Matches your background */
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
 body {
     /* Changing to a much lighter, neutral grey */
     background-color: #e0e0e0; 
