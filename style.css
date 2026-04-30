@@ -133,3 +133,72 @@ footer {
     font-size: 0.85rem;
     color: #888;
 }
+
+.content-container {
+    max-width: 800px;
+    margin: 100px auto 40px; /* Top margin accounts for the fixed nav */
+    padding: 0 20px;
+    text-align: left;
+}
+
+.log-page {
+    text-align: left;
+}
+.log-list {
+    list-style: none;
+    padding: 0;
+}
+
+.log-list li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.log-list .date {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.log-list a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.log-list a:hover {
+    color: #c94c4c;
+}
+
+/* Specific styling for the Vault */
+.gear-page {
+    text-align: center;
+}
+
+.gear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gear-card {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.gear-card:hover {
+    transform: translateY(-5px);
+    border-color: #c94c4c; /* Matching your brand red */
+}
+
+.gear-card h3 {
+    margin-top: 0;
+    color: #333;
+}
