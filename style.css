@@ -1,24 +1,59 @@
 nav {
     position: fixed;
     top: 0;
+    left: 0; /* Ensures it starts at the very edge */
     width: 100%;
-    background-color: #f8f8f8; /* Matches your background */
+    display: flex; /* Helps center the internal content */
+    justify-content: center; /* Aligns the UL to the center */
+    background-color: #f8f8f8;
     z-index: 1000;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
+
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center; /* Standard centered navigation */
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    margin: 0 20px;
+  margin: 0 15px; /* Technical precision: consistent spacing */
 }
+
+
+
+
+nav a {
+  text-decoration: none; /* Cleaner, professional look */
+  font-weight: 600; /* Bold, for visibility */
+  color: #333; /* Dark gray, matching your logo text */
+}
+
+
+
+
+/* VISUAL CUE: Hover state */
+nav a:hover {
+  color: #c94c4c; /* Matches the 'RIDE' red in your logo */
+  text-decoration: underline;
+}
+
+/* Radical Candor: Simplify standard visited state to prevent color clutter */
+nav a:visited {
+  color: #333; /* For navigation, the visited state shouldn't stand out */
+}
+
+/* DEFINING THE ACTIVE STATE (Add 'class="active"' to your HTML on the current page) */
+nav a.active {
+  color: #c94c4c; /* Persistent red identifier for where you are */
+  border-bottom: 2px solid #c94c4c; /* Underline specific to the active page */
+}
+
+
 
 body {
     /* Changing to a much lighter, neutral grey */
@@ -32,6 +67,7 @@ body {
     min-height: 100vh;
     margin: 0;
     text-align: center;
+    padding-top: 60px; /* Adjust this value based on the height of the nav bar */
 }
 
 .container {
