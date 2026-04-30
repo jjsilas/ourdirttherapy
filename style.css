@@ -202,3 +202,64 @@ footer {
     margin-top: 0;
     color: #333;
 }
+
+/* Specific styling for the detailed specs page */
+.spec-page {
+    text-align: left; /* Left align for data readability */
+}
+
+.spec-page h1 {
+    text-align: center;
+}
+
+.spec-page p {
+    text-align: center;
+    color: #666;
+}
+
+.technical-specs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* On screens larger than 600px, make it two columns */
+@media (min-width: 600px) {
+    .technical-specs {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.technical-specs div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.technical-specs dt {
+    font-weight: 600;
+    color: #333;
+}
+
+.technical-specs dd {
+    margin: 0;
+    color: #555;
+    font-weight: 400;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    background-color: #e0e0e0;
+}
