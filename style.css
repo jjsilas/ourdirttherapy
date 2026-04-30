@@ -263,3 +263,42 @@ footer {
 .back-link:hover {
     background-color: #e0e0e0;
 }
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.sponsor-card {
+    padding: 15px;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.sponsor-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.program {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 5px 0 10px 0;
+}
+
+.sponsor-link {
+    font-size: 0.75rem;
+    color: #c94c4c; /* Brand red */
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sponsor-link:hover {
+    text-decoration: underline;
+}
