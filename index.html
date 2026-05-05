@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+    <!-- 1. The Skip Link must be the first focusable element -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav>
-  <ul>
+    <!-- 2. Move Nav inside the Body -->
+    <nav aria-label="Main Navigation">
+      <ul>
     <li><a href="/index.html" class="active">Home</a></li>
     <li><a href="/log/">Field Logs</a></li>
     <li><a href="/gear/">The Vault</a></li>
@@ -18,7 +22,7 @@
 </nav>
 
 
-<body>
+
     <div class="home-layout container">
         <header>
             <img src="assets/OurDirtTherapyLog2026.png" alt="Our Dirt Therapy Logo" class="main-logo">
